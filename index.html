@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-center min-h-screen bg-slate-200">
+      <div
+        class="flex flex-col p-6 m-3 space-y-10 bg-white rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16"
+      >
+        <div class="flex flex-col space-y-10 text-center">
+          <h3 class="text-3xl text-pink-300">Which number do I think ?</h3>
+          <p class="result text-xl">Guess from 1 to 50</p>
+          <div class="w-full">
+            <input
+              type="number"
+              value="1"
+              max="50"
+              min="1"
+              class="border border-blue-300 outline-4 p-4 rounded-lg w-8/12"
+            />
+            <button
+              type="button"
+              id="startBtn"
+              class="bg-blue-200 p-4 rounded-lg"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
